@@ -29,7 +29,7 @@ namespace Day6_Stack_Queue_Problems
             if (IsEmpty())
             {
                 Console.WriteLine("Stack is empty. Cannot pop.");
-                return -1; // Return a sentinel value to indicate an error.
+                return -1; 
             }
             int data = top.Data;
             top = top.Next;
@@ -41,7 +41,7 @@ namespace Day6_Stack_Queue_Problems
             if (IsEmpty())
             {
                 Console.WriteLine("Stack is empty. Cannot peek.");
-                return -1; // Return a sentinel value to indicate an error.
+                return -1; 
             }
             return top.Data;
         }

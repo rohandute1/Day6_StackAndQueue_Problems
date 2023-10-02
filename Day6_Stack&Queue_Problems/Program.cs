@@ -25,23 +25,15 @@ namespace Day6_Stack_Queue_Problems
                     case 1:
                         LinkedListStack stack = new LinkedListStack();
 
-                        // Push elements onto the stack in the specified order
-                        stack.Push(70);
-                        stack.Push(30);
                         stack.Push(56);
+                        stack.Push(30);
+                        stack.Push(70);
 
-                        // Print the top element
-                        int topElement = stack.Peek();
-                        if (topElement != -1)
-                        {
-                            Console.WriteLine("Top element: " + topElement);
-                        }
-
-                        // Pop elements from the stack and print them
+                        // Pop elements from the stack until it is empty
                         Console.WriteLine("Popped elements:");
-                        int poppedElement;
-                        while ((poppedElement = stack.Pop()) != -1)
+                        while (!stack.IsEmpty())
                         {
+                            int poppedElement = stack.Pop();
                             Console.WriteLine(poppedElement);
                         }
                         break;
