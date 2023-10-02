@@ -33,7 +33,7 @@ namespace Day6_Stack_Queue_Problems
         {
             Node newNode = new Node(item);
 
-            if (rear == null)
+            if (front == null)
             {
                 front = newNode;
                 rear = newNode;

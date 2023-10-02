@@ -46,8 +46,8 @@ namespace Day6_Stack_Queue_Problems
                         customQueue.Enqueue(70);
 
                         Console.WriteLine("Dequeue: " + customQueue.Dequeue());
-                        Console.WriteLine("Dequeue: " + customQueue.Dequeue()); 
-                        Console.WriteLine("Dequeue: " + customQueue.Dequeue()); 
+                        Console.WriteLine("Dequeue: " + customQueue.Dequeue());
+                        Console.WriteLine("Dequeue: " + customQueue.Dequeue());
 
                         break;
                 }
