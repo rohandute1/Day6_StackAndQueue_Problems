@@ -16,7 +16,7 @@ namespace Day6_Stack_Queue_Problems
             while (continueExecution)
             {
                 Console.WriteLine("Choose Stack or Queue");
-                Console.WriteLine("1.Stack operation");
+                Console.WriteLine("1.Stack operation\n2.Queue operations");
 
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -37,6 +37,19 @@ namespace Day6_Stack_Queue_Problems
                             Console.WriteLine(poppedElement);
                         }
                         break;
+
+                    case 2:
+                        LinkedListQueue customQueue = new LinkedListQueue();
+
+                        customQueue.Enqueue(56);
+                        customQueue.Enqueue(30);
+                        customQueue.Enqueue(70);
+
+                        Console.WriteLine("Dequeue: " + customQueue.Dequeue());
+                        Console.WriteLine("Dequeue: " + customQueue.Dequeue()); 
+                        Console.WriteLine("Dequeue: " + customQueue.Dequeue()); 
+
+                        break;
                 }
                 Console.WriteLine("Do you want to continue.(yes/no)");
                 string userInput = Console.ReadLine();  
@@ -45,8 +58,6 @@ namespace Day6_Stack_Queue_Problems
                     continueExecution = false;
                 }
             }
-            
-
             Console.ReadLine();
         }
     }
